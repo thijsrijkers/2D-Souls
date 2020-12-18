@@ -1,0 +1,280 @@
+/* css */
+.player { 
+    width: 70px; height: 80px; 
+    background-image:url("animation.png"); 
+    margin-top:217px; 
+    animation: player 1s steps(4) infinite;
+    size: 70px, 80px;
+    float: left;
+}
+
+.boss { 
+    width: 140px; height: 160px; 
+    background-image:url("animationBOSSfriede.png"); 
+    animation: boss 1.5s steps(4) infinite;
+    margin-top:135px;
+}
+
+.bonfire { 
+    width: 76px; height: 72px; 
+    background: url("bonfire.gif") repeat;
+    position:absolute; 
+    bottom: 60px;
+    left: 450px;
+}
+
+.walkboss { 
+    animation: walkboss .30s steps(4);
+}
+
+.bossattack { 
+    animation: bossattack .30s steps(4);
+}
+
+.bossattackFriede { 
+    animation: bossattackFriede .30s steps(4);
+}
+
+.walk { 
+    animation: walk .30s steps(4);
+}
+
+.roll { 
+    animation: roll .20s steps(4);
+}
+
+.attack { 
+    animation: attack .20s steps(4);
+}
+
+#canvas {
+    position:absolute; top:0; width:900px; height:362px;
+    background: url("backgroundgif.gif") repeat;
+    background-size: cover;
+    float:left; margin-right:20px; 
+    border-style: solid;
+    border-width: 5px;
+    margin-top:30px;
+  }
+p{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    font: Helvetica;
+}
+#bossname{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    font: Helvetica;
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+}
+
+#bossChoice{
+    text-decoration-color: white;
+    color: white;
+    background-color:black;
+    font: Helvetica;
+    position: absolute;
+    bottom: -70px;
+    left: 235px;
+}
+
+#mode{
+    text-decoration-color: white;
+    color: white;
+    background-color:black;
+    font: Helvetica;
+    position: absolute;
+    bottom: -100px;
+    left: 260px;
+}
+
+#item{
+    position: absolute;
+    bottom: 10;
+    left: 20;
+}
+
+#flask{
+    color: white;
+    font: Helvetica;
+    position: absolute;
+    bottom: 3;
+    left: 70;
+}
+
+.bosshealth{
+    position: absolute;
+    bottom: 31px;
+    background-color: #3d3733;
+    height: 15px;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 19px;
+    float: left;
+}
+.healthboss{
+    background-color: #8f453e;
+    height: 8px;
+    width: 490px;
+    transform: translate(1%, 40%);
+    float:left;
+}
+
+#playerContainer{
+    position: absolute;
+    bottom: 270px;
+    height: 100px;
+    width: 400px;
+    float: left;
+}
+.icon{
+    height: 100px;
+    height: 100px;
+    width: 400px;
+    float: left;
+}
+
+.playerhealth{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    background-color: #3d3733;
+    height: 15px;
+    width: 190px;
+    float: left;
+}
+
+.healthplayer{
+    background-color: #8f453e;
+    height: 8px;
+    width: 180px;
+    transform: translate(1%, 40%);
+    float:left;
+}
+
+.playerstamina{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: #3d3733;
+    height: 15px;
+    width: 190px;
+    float: left;
+}
+
+.staminaplayer{
+    background-color: #4e8f3e;
+    height: 8px;
+    width: 180px;
+    transform: translate(1%, 40%);
+    float:left;
+}
+
+#testmessage{
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    width:900px;
+    background-color: grey;
+    font: Helvetica;
+}
+
+#overlay {
+    position:absolute;
+    display: block;
+    width:910px;
+    height:392px;
+    top: 10;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #water {
+    position:absolute;
+    display: block;
+    width:910px;
+    height:362px;
+    z-index: 2;
+    cursor: pointer;
+    bottom: 1;
+  }
+  #title {
+    position:absolute;
+    animation: fadein 2s;
+    top: 80;
+    left: 170;
+  }
+
+  #startgame {
+    position:absolute;
+    top: 280;
+    left: 420;
+  }
+  
+  #death {
+    animation: fadein 2s;
+    position:absolute;
+    display: block;
+    width:910px;
+    height:392px;
+    top: 10;
+    background-color: #010001;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #deathimage {
+    position:absolute;
+    top: 80;
+    left: 170;
+  }
+
+  #refreshgame {
+    position:absolute;
+    top: 280;
+    left: 420;
+  }
+
+@keyframes player {
+    0% { background-position: 0px -80; } 100% { background-position: -280px -80; }
+}
+
+@keyframes walk {
+    0% { background-position: 0px 0; } 100% { background-position: -280px 0; }
+}
+
+@keyframes roll {
+    0% { background-position: 0px -160; } 100% { background-position: -280px -160; }
+}
+
+@keyframes attack {
+    0% { background-position: 0px -240; } 100% { background-position: -280px -240; }
+}
+
+@keyframes boss {
+    0% { background-position: 0px -0; } 100% { background-position: -700px -0; }
+}
+
+@keyframes walkboss {
+    0% { background-position: 0px -175; } 100% { background-position: -700px -175; }
+}
+@keyframes bossattack {
+    0% { background-position: 0px -340; } 100% { background-position: -700px -340; }
+}
+@keyframes bossattackFriede {
+    0% { background-position: 0px -515; } 100% { background-position: -700px -515; }
+}
+@keyframes bonfire {
+    0% { background-position: 0px 0; } 100% { background-position: -120px 0; }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
